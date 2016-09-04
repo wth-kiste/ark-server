@@ -18,5 +18,5 @@ RUN /home/steam/steamcmd.sh +login anonymous +force_install_dir $ARK_PATH +app_u
 
 ARG params
 
-ENTRYPOINT ["./server/ShooterGame/Binaries/Linux/ShooterGameServer",  params, "-nosteamclient", "-game", "-server", "-log"]
+ENTRYPOINT ["./ShooterGame/Binaries/Linux/ShooterGameServer",  params, "-nosteamclient", "-game", "-server", "-log"]
 
